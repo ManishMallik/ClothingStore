@@ -1,5 +1,8 @@
 package com.example.backend;
 import org.springframework.web.bind.annotation.RequestMapping;
+
+import java.util.Map;
+
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -8,13 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class PurchaseController {
     
     @GetMapping("/hello")
-    public String hello() {
-        return "Hello from PurchaseController!";
+    public Map<String, String> hello() {
+        return Map.of("message", "Hello from PurchaseController!");
     }
 
     @GetMapping("/test")
-    public String test() {
-        return "Test endpoint in PurchaseController!";
+    public Map<String, String> test() {
+        return Map.of("message", "Test endpoint in PurchaseController!");
     }
 
 }
