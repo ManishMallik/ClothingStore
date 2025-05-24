@@ -1,4 +1,3 @@
-// src/main/java/com/example/backend/WebConfig.java
 package com.example.backend;
 
 import org.springframework.context.annotation.Bean;
